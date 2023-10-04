@@ -1,5 +1,7 @@
 import useLoginModal from "@/hooks/useLoginModal";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import Input from "../Input";
+import Modal from "../Modal";
 
 const LoginModal = () => {
   const loginModal = useLoginModal();
@@ -8,11 +10,48 @@ const LoginModal = () => {
   const [password, setPassword] = useState("");
   const [isLoading, setisLoading] = useState(false);
 
-  const onsubmit;
+  const onSubmit = useCallback(async () => {
+    try {
+      setisLoading(true);
+
+      // TODO ADD LOG IN
+
+      loginModal.onClose();
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setisLoading(false);
+    }
+  }, [loginModal]);
+
+  const bodyContent = (
+    <div className="flex flex-col gap-4">
+      <Input
+        placeholder="Email"
+        onChange={(e) => setEmail(e.target.value)}
+        value={email}
+        disabled={isLoading}
+      />
+      <Input
+        placeholder="Password"
+        onChange={(e) => setPassword(e.target.value)}
+        value={password}
+        disabled={isLoading}
+      />
+    </div>
+  );
 
   return (
     <>
-      <div></div>
+      <Modal
+        disabled={isLoading}
+        isOpen={loginModal.isOpen}
+        title="Login"
+        actionLabel="Sign in"
+        onClose={loginModal.onClose}
+        onSubmit={onSubmit}
+        body={bodyContent}
+      />
     </>
   );
 };
