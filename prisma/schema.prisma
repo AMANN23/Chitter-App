@@ -58,9 +58,9 @@ model Comment {
 
 model Notification {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-body String
-userId String @db.ObjectId
-createdAt DateTime @default(now())
+  body String
+  userId String @db.ObjectId
+  createdAt DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
