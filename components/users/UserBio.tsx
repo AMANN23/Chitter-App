@@ -39,6 +39,9 @@ const UserBio: React.FC<UserBioProps> = ({ userId }) => {
             </p>
             <p className="text-md text-neutral-500">@{fetchedUser?.username}</p>
           </div>
+          <div className="flex flex-col mt-4">
+            <p className="text-white">{fetchedUser?.bio}</p>
+          </div>
         </div>
       </div>
     </>
