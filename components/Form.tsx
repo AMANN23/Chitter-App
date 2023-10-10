@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import useLoginModal from "@/hooks/useLoginModal";
 import usePosts from "@/hooks/usePosts";
 import useRegisterModal from "@/hooks/useRegisterModal";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 interface FormProps {
   placeholder: string;
@@ -19,6 +21,23 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
 
   const [body, setBody] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  const onSubmit = useCallback(async () => {
+    try {
+      setIsLoading(true);
+
+      await axios.post("/api/posts", { body });
+
+      toast.success("Chit Created");
+
+      setBody("");
+      mutatePosts();
+    } catch (error) {
+      toast.error("Something went wrong");
+    } finally {
+      setIsLoading(false);
+    }
+  }, [body, mutatePosts]);
 
   return (
     <>
