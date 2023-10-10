@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import useLoginModal from "@/hooks/useLoginModal";
 import usePosts from "@/hooks/usePosts";
@@ -15,6 +16,9 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
 
   const { data: currentUser } = useCurrentUser();
   const { mutate: mutatePosts } = usePosts();
+
+  const [body, setBody] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <>
