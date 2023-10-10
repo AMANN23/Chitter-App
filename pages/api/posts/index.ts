@@ -38,6 +38,9 @@ export default async function handler(
             user: true,
             comments: true,
           },
+          orderBy: {
+            createdAt: "desc",
+          },
         });
       }
     }
