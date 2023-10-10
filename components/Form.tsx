@@ -43,9 +43,12 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
   return (
     <>
       <div className="border-b-[1px] border-neutral-800 px-5 py-2">
-        <div className="py-8">
-          <h1
-            className="
+        {currentUser ? (
+          <div></div>
+        ) : (
+          <div className="py-8">
+            <h1
+              className="
               text-white
               text-2xl
               text-center
@@ -53,14 +56,19 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
               font-bold
 
               "
-          >
-            Welcome to Chitter!
-          </h1>
-          <div className="flex flex-row items-center justify-center gap-4">
-            <Button label="Login" onClick={loginModal.onOpen} />
-            <Button label="Register" onClick={registerModal.onOpen} secondary />
+            >
+              Welcome to Chitter!
+            </h1>
+            <div className="flex flex-row items-center justify-center gap-4">
+              <Button label="Login" onClick={loginModal.onOpen} />
+              <Button
+                label="Register"
+                onClick={registerModal.onOpen}
+                secondary
+              />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );
