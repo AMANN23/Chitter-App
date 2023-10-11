@@ -6,6 +6,7 @@ import useRegisterModal from "@/hooks/useRegisterModal";
 import toast from "react-hot-toast";
 import axios from "axios";
 import Button from "./Button";
+import Avatar from "./Avatar";
 
 interface FormProps {
   placeholder: string;
@@ -44,7 +45,18 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
     <>
       <div className="border-b-[1px] border-neutral-800 px-5 py-2">
         {currentUser ? (
-          <div></div>
+          <div className="flex flex-row gap-4">
+            <div>
+              <Avatar userId={currentUser?.id} />
+            </div>
+            <div className="w-full">
+              <textarea
+                disabled={isLoading}
+                onChange={(e) => setBody(e.target.value)}
+                value={body}
+              ></textarea>
+            </div>
+          </div>
         ) : (
           <div className="py-8">
             <h1
