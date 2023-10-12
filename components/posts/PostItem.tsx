@@ -110,6 +110,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
                 <p>{data.comments?.length || 0}</p>
               </div>
               <div
+                onClick={onLike}
                 className="
               flex
               flex-row
