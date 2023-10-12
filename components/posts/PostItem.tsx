@@ -67,6 +67,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
               "
             >
               <p
+                onClick={goToUser}
                 className="
                   text-white
                   font-semibold
@@ -77,6 +78,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
                 {data.user.name}
               </p>
               <span
+                onClick={goToUser}
                 className="
               text-neutral-500
               cursor-pointer
@@ -87,6 +89,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
               >
                 @{data.user.username}
               </span>
+              <span className="text-neutral-500 text-sm">{createdAt}</span>
             </div>
           </div>
         </div>
