@@ -3,6 +3,7 @@ import useLoginModal from "@/hooks/useLoginModal";
 import { formatDistanceToNowStrict } from "date-fns";
 import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
+import Avatar from "../Avatar";
 
 interface PostItemProps {
   data: Record<string, any>;
@@ -56,7 +57,11 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
       hover:bg-neutral-900
       transition
       "
-      ></div>
+      >
+        <div className="flex flex-row items-start gap-3">
+          <Avatar />
+        </div>
+      </div>
     </>
   );
 };
