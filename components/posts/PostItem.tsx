@@ -59,7 +59,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
       "
       >
         <div className="flex flex-row items-start gap-3">
-          <Avatar />
+          <Avatar userId={data.user.id} />
         </div>
       </div>
     </>
