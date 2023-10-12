@@ -4,7 +4,7 @@ import { formatDistanceToNowStrict } from "date-fns";
 import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
 import Avatar from "../Avatar";
-import { AiOutlineMessage } from "react-icons/ai";
+import { AiOutlineHeart, AiOutlineMessage } from "react-icons/ai";
 
 interface PostItemProps {
   data: Record<string, any>;
@@ -107,6 +107,21 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
               "
               >
                 <AiOutlineMessage size={20} />
+                <p>{data.comments?.length || 0}</p>
+              </div>
+              <div
+                className="
+              flex
+              flex-row
+              items-center
+              text-neutral-500
+              gap-2
+              cursor-pointer
+              transition
+              hover:text-red-500
+              "
+              >
+                <AiOutlineHeart size={20} />
                 <p>{data.comments?.length || 0}</p>
               </div>
             </div>
