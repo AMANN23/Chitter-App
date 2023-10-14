@@ -7,6 +7,7 @@ import useUser from "@/hooks/useUser";
 
 import Button from "../Button";
 import useEditModal from "@/hooks/useEditModal";
+import useFollow from "@/hooks/useFollow";
 
 interface UserBioProps {
   userId: string;
@@ -17,6 +18,8 @@ const UserBio: React.FC<UserBioProps> = ({ userId }) => {
   const { data: fetchedUser } = useUser(userId);
 
   const editModal = useEditModal();
+
+  const { isFollowing, toggleFlow } = useFollow;
 
   const createdAt = useMemo(() => {
     if (!fetchedUser?.createdAt) {
