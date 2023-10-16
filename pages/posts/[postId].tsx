@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import PostItem from "@/components/posts/PostItem";
 import usePost from "@/hooks/usePost";
 import { useRouter } from "next/router";
 import { ClipLoader } from "react-spinners";
@@ -20,6 +21,7 @@ const PostView = () => {
   return (
     <>
       <Header label="Chit" showBackArrow />
+      <PostItem data={fetchedPost} />
     </>
   );
 };
