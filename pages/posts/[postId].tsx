@@ -1,3 +1,4 @@
+import Form from "@/components/Form";
 import Header from "@/components/Header";
 import PostItem from "@/components/posts/PostItem";
 import usePost from "@/hooks/usePost";
@@ -22,6 +23,7 @@ const PostView = () => {
     <>
       <Header label="Chit" showBackArrow />
       <PostItem data={fetchedPost} />
+      <Form postId={postId as string} isComment placeholder="Chit your reply" />
     </>
   );
 };
