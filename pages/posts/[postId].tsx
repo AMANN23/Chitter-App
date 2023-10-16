@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import usePost from "@/hooks/usePost";
 import { useRouter } from "next/router";
 import { ClipLoader } from "react-spinners";
@@ -18,7 +19,7 @@ const PostView = () => {
 
   return (
     <>
-      <div></div>
+      <Header label="Chit" showBackArrow />
     </>
   );
 };
