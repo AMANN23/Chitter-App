@@ -30,6 +30,10 @@ export default async function handler(
     }
 
     let updatedLikedIds = [...(post.likedIds || [])];
+
+    if (req.method === "POST") {
+      updatedLikedIds.push(currentUser.id);
+    }
   } catch (error) {
     console.log(error);
     return res.status(400).end();
