@@ -14,6 +14,22 @@ export default async function handler(
     const { postId } = req.body;
 
     const { currentUser } = await serverAuth(req, res);
+
+    if (!postId || typeof postId !== "string") {
+      throw new Error("Invalid ID");
+    }
+
+    const post = await prisma.post.findUnique({
+      where: {
+        id: postId,
+      },
+    });
+
+    if (!post) {
+      throw new Error("Invalid ID");
+    }
+
+    let updatedLikedIds = { ...(post.likedIds || []) };
   } catch (error) {
     console.log(error);
     return res.status(400).end();
