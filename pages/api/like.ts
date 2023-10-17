@@ -29,7 +29,7 @@ export default async function handler(
       throw new Error("Invalid ID");
     }
 
-    let updatedLikedIds = { ...(post.likedIds || []) };
+    let updatedLikedIds = [...(post.likedIds || [])];
   } catch (error) {
     console.log(error);
     return res.status(400).end();
