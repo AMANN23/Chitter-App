@@ -50,7 +50,7 @@ export default async function handler(
       },
     });
 
-    return res.status(200).json(updatedPost);
+    return res.status(20).json(updatedPost);
   } catch (error) {
     console.log(error);
     return res.status(400).end();
