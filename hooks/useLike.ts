@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import useCurrentUser from "./useCurrentUser";
 import useLoginModal from "./useLoginModal";
 import usePost from "./usePost";
@@ -15,5 +15,11 @@ const useLike = ({ postId, userId }: { postId: string; userId?: string }) => {
     const list = fetchedPost?.likedIds || [];
 
     return list.includes(currentUser?.id);
+  }, [currentUser?.id, fetchedPost?.likedIds]);
+
+  const toggleLike = useCallback(async () => {
+    if (!currentUser) {
+      return loginModal.onOpen();
+    }
   }, []);
 };
