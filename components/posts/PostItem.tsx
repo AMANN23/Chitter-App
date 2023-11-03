@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
 import Avatar from "../Avatar";
 import { AiOutlineHeart, AiOutlineMessage } from "react-icons/ai";
+import useLike from "@/hooks/useLike";
 
 interface PostItemProps {
   data: Record<string, any>;
@@ -16,6 +17,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
   const loginModal = useLoginModal();
 
   const { data: currentUser } = useCurrentUser();
+  const { hasLiked, toggleLike } = useLike({ postId: data.id, userId });
 
   const goToUser = useCallback(
     (event: any) => {
