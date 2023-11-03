@@ -36,6 +36,10 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
     (event: any) => {
       event.stopPropagation();
 
+      if (!currentUser) {
+        return loginModal.onOpen();
+      }
+
       loginModal.onOpen();
     },
     [loginModal]
