@@ -14,7 +14,6 @@ interface PostItemProps {
 
 const PostItem: React.FC<PostItemProps> = ({ data, userId }) => {
   const router = useRouter();
-  const loginModal = useLoginModal();
 
   const { data: currentUser } = useCurrentUser();
   const { hasLiked, toggleLike } = useLike({ postId: data.id, userId });
