@@ -44,6 +44,7 @@ const CommentItem: React.FC<CommentItemProps> = ({ data }) => {
           <div>
             <div className="flex flex-row items-center gap-2">
               <p
+                onClick={goToUser}
                 className="
               text-white
               font-semibold
@@ -53,6 +54,18 @@ const CommentItem: React.FC<CommentItemProps> = ({ data }) => {
               >
                 {data.user.name}
               </p>
+              <span
+                className="
+              text-neutral-500
+              cursor-pointer
+              hover:underline
+              hidden
+              md:block
+              "
+              >
+                @{data.user.username}
+              </span>
+              <span className="text-neutral-500 text-sm">{createdAt}</span>
             </div>
           </div>
         </div>
