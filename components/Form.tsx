@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import Button from "./Button";
 import Avatar from "./Avatar";
+import { is } from "date-fns/locale";
 
 interface FormProps {
   placeholder: string;
@@ -28,7 +29,9 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
     try {
       setIsLoading(true);
 
-      await axios.post("/api/posts", { body });
+      const url = isComment ? `/api/comments?postId=${postId}` : "/api/posts";
+
+      await axios.post(url, { body });
 
       toast.success("Chit Created");
 
@@ -39,7 +42,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
     } finally {
       setIsLoading(false);
     }
-  }, [body, mutatePosts]);
+  }, [body, mutatePosts, isComment, postId]);
 
   return (
     <>
