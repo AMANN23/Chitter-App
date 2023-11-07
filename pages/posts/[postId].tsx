@@ -24,6 +24,7 @@ const PostView = () => {
       <Header label="Chit" showBackArrow />
       <PostItem data={fetchedPost} />
       <Form postId={postId as string} isComment placeholder="Chit your reply" />
+      <CommentFeed comments={fetchedPost?.comments} />
     </>
   );
 };
