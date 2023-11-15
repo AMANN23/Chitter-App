@@ -10,6 +10,21 @@ const NotificationsFeed = () => {
     mutateCurrentUser();
   }, [mutateCurrentUser]);
 
+  if (fetchedNotifications.length === 0) {
+    return (
+      <div
+        className="
+      text-neutral-600
+      text-center
+      p-6
+      text-xl      
+      "
+      >
+        No Chitter Notifications
+      </div>
+    );
+  }
+
   return (
     <>
       <div></div>
