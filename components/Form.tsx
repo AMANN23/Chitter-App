@@ -1,14 +1,15 @@
+import axios from "axios";
 import { useCallback, useState } from "react";
+import toast from "react-hot-toast";
+
 import useCurrentUser from "@/hooks/useCurrentUser";
 import useLoginModal from "@/hooks/useLoginModal";
 import usePosts from "@/hooks/usePosts";
 import useRegisterModal from "@/hooks/useRegisterModal";
-import toast from "react-hot-toast";
-import axios from "axios";
-import Button from "./Button";
-import Avatar from "./Avatar";
-import { is } from "date-fns/locale";
 import usePost from "@/hooks/usePost";
+
+import Avatar from "./Avatar";
+import Button from "./Button";
 
 interface FormProps {
   placeholder: string;
