@@ -2,6 +2,9 @@
   <a href="https://github.com/AMANN23/Chitter-App">
    <img src="public/ChitterLogo.png" width="356" height="200">
   </a>
+
+  <h3 align="center">Chitter Application</h3>
+  <p>A Clone of a popular social network created using TypeScript</p>
 </div>
 
 ## Getting Started
