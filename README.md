@@ -16,7 +16,7 @@ Chitter represents a comprehensive full-stack application serving as a replica o
 
 Users are empowered to create and share 'Chits,' engage with content through likes and comments, and establish connections by following other Chitter users, mirroring the functionalities of the original application.
 
-This initial version of Chitter lays the groundwork for upcoming enhancements and advanced features, such as the ability to upload GIFs and videos, a direct messaging service, and the integration of a hashtag search functionality
+This initial version of Chitter lays the groundwork for upcoming enhancements and advanced features, such as the ability to upload GIFs and videos, a direct messaging service, and the integration of a hashtag search functionality.
 
 ## Getting Started
 
