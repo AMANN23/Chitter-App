@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/AMANN23/Chitter-App">
-   <img src="public/ChitterLogo.png" width="356" height="200">
+   <img src="public/ChitterLogo.png" width="300" height="300">
   </a>
 
   <h3 align="center">Chitter Application</h3>
