@@ -1,3 +1,9 @@
+<div align="center">
+  <a href="https://github.com/AMANN23/Chitter-App">
+   <img src="public/ChitterLogo.png" width="100" height="100">
+  </a>
+</div>
+
 ## Getting Started
 
 First, run the development server:
