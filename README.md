@@ -4,7 +4,7 @@
   </a>
 
   <h1 align="center">Chitter Application</h1>
-  <p>A clone of a popular social network created using TypeScript and React</p>
+  <p>A clone of a popular social network created using TypeScript and React!</p>
 </div>
 
 ## Getting Started
