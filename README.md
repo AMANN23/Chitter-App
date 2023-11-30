@@ -25,11 +25,15 @@ As the project is deployed on Vercel, a 504 (Gateway Timeout) error occurs, so n
 First, run the development server:
 
 ```bash
-npm run dev
+Step 1: In your terminal run: git clone https://github.com/AMANN23/Chitter-App.git
 
+Step 2: npm install i in the main directory
+
+Step 3:
+
+npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-npm install i
 
 ```
