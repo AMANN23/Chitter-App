@@ -6,7 +6,7 @@
   <h1 align="center">Chitter Application</h1>
   <p>A clone of a popular social network created using TypeScript and React!</p>
   <p align="center">
-  <a href="https://chitter-application.vercel.app/">Try Out the App For Yourself!</a>
+  <a href="https://chitter-application.vercel.app/">Try Out the App Out For Yourself!</a>
   </p>
 </div>
 
@@ -17,6 +17,8 @@ Chitter represents a comprehensive full-stack application serving as a replica o
 Users are empowered to create and share 'Chits,' engage with content through likes and comments, and establish connections by following other Chitter users, mirroring the functionalities of the original application.
 
 This initial version of Chitter lays the groundwork for upcoming enhancements and advanced features, such as the ability to upload GIFs and videos, a direct messaging service, and the integration of a hashtag search functionality.
+
+As the project is deployed on vercel, a 504 (Gateway Timeout) error occurs so not all the functions work but the app works perfectly locally. All features will be screenshot and shown below!
 
 ## Getting Started
 
