@@ -3,7 +3,7 @@
    <img src="public/ChitterLogo.png" width="300" height="300">
   </a>
 
-  <h3 align="center">Chitter Application</h3>
+  <h1 align="center">Chitter Application</h1>
   <p>A clone of a popular social network created using TypeScript and React</p>
 </div>
 
