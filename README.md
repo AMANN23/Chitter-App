@@ -12,7 +12,11 @@
 
 ## About the Project
 
-Chitter represents a comprehensive full-stack application serving as a replica of the widely-used social media platform, Twitter (now X). Users are empowered to create and share 'Chits,' engage with content through likes and comments, and establish connections by following other Chitter users, mirroring the functionalities of the original application. This initial version of Chitter lays the groundwork for upcoming enhancements and advanced features, such as the ability to upload GIFs and videos, a direct messaging service, and the integration of a hashtag search functionality
+Chitter represents a comprehensive full-stack application serving as a replica of the widely-used social media platform, Twitter (now X).
+
+Users are empowered to create and share 'Chits,' engage with content through likes and comments, and establish connections by following other Chitter users, mirroring the functionalities of the original application.
+
+This initial version of Chitter lays the groundwork for upcoming enhancements and advanced features, such as the ability to upload GIFs and videos, a direct messaging service, and the integration of a hashtag search functionality
 
 ## Getting Started
 
