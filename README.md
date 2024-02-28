@@ -18,7 +18,7 @@ Users are empowered to create and share 'Chits,' engage with content through lik
 
 This initial version of Chitter lays the groundwork for upcoming enhancements and advanced features, such as the ability to upload GIFs and videos, a direct messaging service, and the integration of a hashtag search functionality.
 
-As the project is deployed on Vercel, a 504 (Gateway Timeout) error occurs, so not all the functions work but the app works perfectly locally. All features will be screenshot and shown below!
+As the project is deployed on Vercel, a 504 (Gateway Timeout) error occurs, so not all the functions work but the app works perfectly locally. All of the main features will be screenshot and shown below!
 
 ## Getting Started
 
