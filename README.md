@@ -6,7 +6,7 @@
   <h1 align="center">Chitter Application</h1>
   <p>A clone of a popular social network created using TypeScript and React!</p>
   <p align="center">
-  <a>Try Out the App Out For Yourself!</a>
+  <a href="https://chitter-application.vercel.app/">Try Out the App Out For Yourself!</a>
   </p>
 </div>
 
