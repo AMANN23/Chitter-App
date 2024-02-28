@@ -28,7 +28,7 @@ First, run the development server:
 
 Step 1: In your terminal run: git clone https://github.com/AMANN23/Chitter-App.git
 
-Step 2: In your terminal run: npm install and npm install i in the main directory
+Step 2: In your terminal run: npm install, npm install i, npm install bcrypt in the main directory
 
 Step 3: Create a .env file in the main directory
 
@@ -54,6 +54,8 @@ Step 7: Make sure MongoDB for VS code is installed on your Visual Studio Code an
 Step 8: In your terminal run: npm run dev
 
 Step 9: Open http://localhost:3000 with your browser to see the results.
+
+Step 10: Everything should be working but if not, delete all node modules and type in the terminal npm install
 
 ```
 
