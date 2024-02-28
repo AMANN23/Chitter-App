@@ -22,6 +22,8 @@ As the project is deployed on Vercel, a 504 (Gateway Timeout) error occurs, so n
 
 ## Getting Started
 
+```bash
+
 Step 1: In your terminal run: git clone https://github.com/AMANN23/Chitter-App.git
 
 Step 2: In your terminal run: npm install, npm install i, npm install bcrypt in the main directory
@@ -44,6 +46,8 @@ Step 8: In your terminal run: npm run dev
 Step 9: Open http://localhost:3000 with your browser to see the results.
 
 Step 10: Everything should be working but if not, delete all node modules and type in the terminal npm install
+
+```
 
 ## Key Features
 
