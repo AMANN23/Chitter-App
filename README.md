@@ -52,4 +52,8 @@ Step 7: Open http://localhost:3000 with your browser to see the results.
 
 ```
 
-## Screenshots of Main Features!
+## Key Features
+
+## Screenshots of Key Features
+
+## Future Ideas to be Implemented
