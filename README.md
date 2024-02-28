@@ -33,12 +33,17 @@ Step : In your terminal run: npm install i in the main directory
 Step : Create a .env file in the main directory
 
 Step : Inside the .env file copy the following lines:
+       DATABASE_URL=
        NEXTAUTH_JWT_SECRET="NEXT_AUTH_JWT_SECRET"
        NEXTAUTH_SECRET="NEXT_AUTH_SECRET"
 
+
+Step : To get the DATABASE_URL, you will need to complete these following sub-steps:
+       1.
+
 Step : In your terminal run: npm run dev
 
-Open http://localhost:3000 with your browser to see the result.
+Open http://localhost:3000 with your browser to see the results.
 
 
 ```
