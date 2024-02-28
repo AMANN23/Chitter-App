@@ -28,7 +28,7 @@ First, run the development server:
 
 Step 1: In your terminal run: git clone https://github.com/AMANN23/Chitter-App.git
 
-Step 2: In your terminal run: npm install i in the main directory
+Step 2: In your terminal run: npm install and npm install i in the main directory
 
 Step 3: Create a .env file in the main directory
 
@@ -39,16 +39,19 @@ Step 4: Inside the .env file copy the following lines:
 
 
 Step 5: To get the DATABASE_URL, you will need to complete these following sub-steps:
-       1. Sign up or Login to MongoDB
-       2. Set up connection security and add a 0.0.0.0/0 IP address so it can be accessed anywhere
-       3. Click connect and connect MongoDB for VS code
-       4. The Database URL can be found in a similar format to this 'mongodb+srv://username:<password>@cluster0.*******.mongodb.net/test'
-       5. The .env file should be completed
+       1. Sign up or Login to MongoDB.
+       2. Create a deployment choosing the free cluster option.
+       3. Create a username and password.
+       4. Add a 0.0.0.0/0 IP address so it can be accessed anywhere then click finish and close.
+       5. On the left sidebar click 'Database', 'Connect' and then click 'MongoDB for VS Code'
+       6. The Database URL can be found in a similar format to this 'mongodb+srv://username:<password>@cluster0.*******.mongodb.net/test'
+       7. The .env file should be completed
 
-Step 6: In your terminal run: npm run dev
+Step 6: In your terminal run npx prisma db push
 
-Step 7: Open http://localhost:3000 with your browser to see the results.
+Step 7: In your terminal run: npm run dev
 
+Step 8: Open http://localhost:3000 with your browser to see the results.
 
 ```
 
