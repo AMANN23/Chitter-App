@@ -28,9 +28,9 @@ First, run the development server:
 
 Step 1: In your terminal run: git clone https://github.com/AMANN23/Chitter-App.git
 
-Step 2: In your terminal run: npm install i in the main directory
+Step : In your terminal run: npm install i in the main directory
 
-Step 3: In your terminal run: npm run dev
+Step : In your terminal run: npm run dev
 
 Open http://localhost:3000 with your browser to see the result.
 
