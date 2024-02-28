@@ -28,22 +28,26 @@ First, run the development server:
 
 Step 1: In your terminal run: git clone https://github.com/AMANN23/Chitter-App.git
 
-Step : In your terminal run: npm install i in the main directory
+Step 2: In your terminal run: npm install i in the main directory
 
-Step : Create a .env file in the main directory
+Step 3: Create a .env file in the main directory
 
-Step : Inside the .env file copy the following lines:
+Step 4: Inside the .env file copy the following lines:
        DATABASE_URL=
        NEXTAUTH_JWT_SECRET="NEXT_AUTH_JWT_SECRET"
        NEXTAUTH_SECRET="NEXT_AUTH_SECRET"
 
 
-Step : To get the DATABASE_URL, you will need to complete these following sub-steps:
-       1.
+Step 5: To get the DATABASE_URL, you will need to complete these following sub-steps:
+       1. Sign up or Login to MongoDB
+       2. Set up connection security and add a 0.0.0.0/0 IP address so it can be accessed anywhere
+       3. Click connect and connect MongoDB for VS code
+       4. The Database URL can be found in a similar format to this 'mongodb+srv://username:<password>@cluster0.*******.mongodb.net/test'
+       5. The .env file should be completed
 
-Step : In your terminal run: npm run dev
+Step 6: In your terminal run: npm run dev
 
-Open http://localhost:3000 with your browser to see the results.
+Step 7: Open http://localhost:3000 with your browser to see the results.
 
 
 ```
