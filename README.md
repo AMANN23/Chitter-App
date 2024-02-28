@@ -49,9 +49,11 @@ Step 5: To get the DATABASE_URL, you will need to complete these following sub-s
 
 Step 6: In your terminal run npx prisma db push
 
-Step 7: In your terminal run: npm run dev
+Step 7: Make sure MongoDB for VS code is installed on your Visual Studio Code and connect with string using the 'Database URL'
 
-Step 8: Open http://localhost:3000 with your browser to see the results.
+Step 8: In your terminal run: npm run dev
+
+Step 9: Open http://localhost:3000 with your browser to see the results.
 
 ```
 
