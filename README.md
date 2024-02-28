@@ -30,6 +30,12 @@ Step 1: In your terminal run: git clone https://github.com/AMANN23/Chitter-App.g
 
 Step : In your terminal run: npm install i in the main directory
 
+Step : Create a .env file in the main directory
+
+Step : Inside the .env file copy the following lines:
+       NEXTAUTH_JWT_SECRET="NEXT_AUTH_JWT_SECRET"
+       NEXTAUTH_SECRET="NEXT_AUTH_SECRET"
+
 Step : In your terminal run: npm run dev
 
 Open http://localhost:3000 with your browser to see the result.
