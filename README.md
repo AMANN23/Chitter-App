@@ -100,7 +100,7 @@ Enjoy the project!
 - TypeScript
 - React
 - TailwindCSS
-- Next.JS
+- Next.js
 - MongoDB
 - Prisma
 - Deployed by Vercel
