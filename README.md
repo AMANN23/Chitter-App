@@ -97,6 +97,14 @@ Enjoy the project!
 
 ## Technologies Used
 
+- TypeScript
+- React
+- TailwindCSS
+- Next.JS
+- MongoDB
+- Prisma
+- Deployed by Vercel
+
 ## Key Features
 
 ## Screenshots of Key Features
