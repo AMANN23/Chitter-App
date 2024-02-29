@@ -42,9 +42,9 @@ npm install i
 npm install bcrypt
 ```
 
-2. Create a .env file in the main directory
+3. Create a .env file in the main directory
 
-Step 4: Inside the .env file copy the following lines:
+4. Inside the .env file copy the following lines:
 
 ```
 DATABASE_URL=
