@@ -95,7 +95,7 @@ npm install
 
 Enjoy the project!
 
-## Technologies Used
+## Language/Technologies Used and Why?
 
 - TypeScript
 - React
