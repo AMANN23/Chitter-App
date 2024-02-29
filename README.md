@@ -56,20 +56,20 @@ NEXTAUTH_SECRET="NEXT_AUTH_SECRET"
 
 5. To get the DATABASE_URL, you will need to complete these following sub-steps:
 
-a. Sign up or Login to MongoDB.
+- Sign up or Login to MongoDB.
 
-b. Create a deployment choosing the free cluster option.
+- Create a deployment choosing the free cluster option.
 
-c. Create a username and password.
+- Create a username and password.
 
-d. Add a 0.0.0.0/0 IP address so it can be accessed anywhere then click finish and close.
+- Add a 0.0.0.0/0 IP address so it can be accessed anywhere then click finish and close.
 
-e. On the left sidebar click 'Database', 'Connect' and then click 'MongoDB for VS Code'
+- On the left sidebar click 'Database', 'Connect' and then click 'MongoDB for VS Code'
 
-f. The Database URL can be found in a similar format to this
-'mongodb+srv://username:<password>@cluster0.**\*\*\***.mongodb.net/test'
+- The Database URL can be found in a similar format to this
+  'mongodb+srv://username:<password>@cluster0.**\*\*\***.mongodb.net/test'
 
-g. The .env file should be completed
+- The .env file should be completed
 
 6. In your terminal run:
 
