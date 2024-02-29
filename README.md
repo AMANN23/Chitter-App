@@ -42,31 +42,48 @@ npm install i
 npm install bcrypt
 ```
 
-Step 3: Create a .env file in the main directory
+2. Create a .env file in the main directory
 
 Step 4: Inside the .env file copy the following lines:
+
+```
 DATABASE_URL=
 NEXTAUTH_JWT_SECRET="NEXT_AUTH_JWT_SECRET"
 NEXTAUTH_SECRET="NEXT_AUTH_SECRET"
+```
 
-Step 5: To get the DATABASE_URL, you will need to complete these following sub-steps:
+5. To get the DATABASE_URL, you will need to complete these following sub-steps:
 
-1. Sign up or Login to MongoDB.
-2. Create a deployment choosing the free cluster option.
-3. Create a username and password.
-4. Add a 0.0.0.0/0 IP address so it can be accessed anywhere then click finish and close.
-5. On the left sidebar click 'Database', 'Connect' and then click 'MongoDB for VS Code'
-6. The Database URL can be found in a similar format to this 'mongodb+srv://username:<password>@cluster0.**\*\*\***.mongodb.net/test' 7. The .env file should be completed
+a. Sign up or Login to MongoDB.
+b. Create a deployment choosing the free cluster option.
+c. Create a username and password.
+d. Add a 0.0.0.0/0 IP address so it can be accessed anywhere then click finish and close.
+e. On the left sidebar click 'Database', 'Connect' and then click 'MongoDB for VS Code'
+f. The Database URL can be found in a similar format to this
+'mongodb+srv://username:<password>@cluster0.**\*\*\***.mongodb.net/test'
+g. The .env file should be completed
 
-Step 6: In your terminal run npx prisma db push
+6. In your terminal run:
 
-Step 7: Make sure MongoDB for VS code is installed on your Visual Studio Code and connect with string using the 'Database URL'
+```
+npx prisma db push
+```
 
-Step 8: In your terminal run: npm run dev
+7. Make sure MongoDB for VS code is installed on your Visual Studio Code and connect with string using the 'Database URL'
 
-Step 9: Open http://localhost:3000 with your browser to see the results.
+8. In your terminal run:
 
-Step 10: Everything should be working but if not, delete all node modules and type in the terminal npm install
+```
+npm run dev
+```
+
+9. Open [http://localhost:3000](http://localhost:3000) with your browser to see the results.
+
+10. Everything should be working but if not, delete all node modules and type in the terminal:
+
+```
+npm install
+```
 
 ## Technologies Used
 
