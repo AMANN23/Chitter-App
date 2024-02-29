@@ -49,6 +49,8 @@ Step 10: Everything should be working but if not, delete all node modules and ty
 
 ```
 
+## Technologies Used
+
 ## Key Features
 
 ## Screenshots of Key Features
