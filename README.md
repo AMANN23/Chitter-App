@@ -22,6 +22,8 @@ As the project is deployed on Vercel, a 504 (Gateway Timeout) error occurs, so n
 
 ## Getting Started
 
+To run the project locally, a few steps will need to be taken before it can function.
+
 1. In your terminal run:
 
 ```
@@ -90,6 +92,8 @@ npm run dev
 ```
 npm install
 ```
+
+Enjoy the project!
 
 ## Technologies Used
 
